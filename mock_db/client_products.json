@@ -1,0 +1,40 @@
+[
+  {
+    "id": "up_001",
+    "client_id": "client_001",
+    "product_id": "prd_optimization_basic",
+    "product_name": "Optimization Basic",
+    "start_date": "2025-10-20",
+    "end_date": null,
+    "is_active": true,
+    "employee_id": "emp_001"
+  },
+  {
+    "id": "up_002",
+    "client_id": "client_001",
+    "product_id": "prd_reporting_plus",
+    "product_name": "Reporting Plus",
+    "start_date": "2025-11-01",
+    "end_date": null,
+    "is_active": true
+  },
+  {
+    "id": "up_003",
+    "client_id": "client_002",
+    "product_id": "prd_billing_core",
+    "product_name": "Billing Core",
+    "start_date": "2025-12-01",
+    "end_date": null,
+    "is_active": true
+  },
+  {
+    "id": "up_004",
+    "client_id": "client_003",
+    "product_id": "prd_optimization_basic",
+    "product_name": "Optimization Basic",
+    "start_date": "2026-01-11",
+    "end_date": null,
+    "is_active": true,
+    "employee_id": "emp_004"
+  }
+]

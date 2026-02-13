@@ -1,0 +1,35 @@
+[
+  {
+    "id": "client_001",
+    "enterprise_number": "0123456789",
+    "account_id": "acc_123",
+    "first_name": "Alice",
+    "last_name": "Peeters",
+    "email": "alice.peeters@example.com",
+    "phone": "+32-470-11-22-33",
+    "city": "Ghent",
+    "created_at": "2025-10-12T09:15:00Z"
+  },
+  {
+    "id": "client_002",
+    "enterprise_number": "1111111111",
+    "account_id": "acc_999",
+    "first_name": "Bruno",
+    "last_name": "De Smet",
+    "email": "bruno.desmet@example.com",
+    "phone": "+32-470-22-33-44",
+    "city": "Antwerp",
+    "created_at": "2025-11-01T14:05:00Z"
+  },
+  {
+    "id": "client_003",
+    "enterprise_number": "9876543210",
+    "account_id": "acc_456",
+    "first_name": "Chloe",
+    "last_name": "Van Damme",
+    "email": "chloe.vandamme@example.com",
+    "phone": "+32-470-33-44-55",
+    "city": "Bruges",
+    "created_at": "2025-11-18T08:40:00Z"
+  }
+]

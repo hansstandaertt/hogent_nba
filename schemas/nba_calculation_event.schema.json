@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/nba_calculation_event.schema.json",
+  "title": "nba_calculation_event",
+  "description": "Event emitted by calculation scripts and consumed by the NBA backend.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "occurred_at",
+    "source",
+    "nba_definition_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique event identifier for idempotency and traceability."
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp when the event was produced."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Producer identifier, for example calculator.customer-segmentation.v1."
+    },
+    "nba_definition_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "enterprise_number": {
+      "type": "string",
+      "minLength": 1
+    },
+    "account_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contact_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "object",
+      "description": "Free-form calculator metadata.",
+      "additionalProperties": true
+    }
+  },
+  "anyOf": [
+    { "required": ["enterprise_number"] },
+    { "required": ["account_id"] },
+    { "required": ["contact_id"] }
+  ],
+  "examples": [
+    {
+      "event_id": "9f6849e6-6110-4bd8-8397-a8f9a6ec7d5a",
+      "occurred_at": "2026-02-09T13:59:00Z",
+      "source": "calculator.customer-segmentation.v1",
+      "nba_definition_id": "def_42",
+      "enterprise_number": "0123456789",
+      "account_id": "acc_123",
+      "contact_id": "con_456",
+      "context": {
+        "score": 0.92,
+        "reason": "high upsell propensity"
+      }
+    }
+  ]
+}

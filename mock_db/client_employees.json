@@ -1,0 +1,57 @@
+[
+  {
+    "id": "emp_001",
+    "client_id": "client_001",
+    "first_name": "Iris",
+    "last_name": "Mertens",
+    "email": "iris.mertens@client-a.com",
+    "role": "Finance Manager",
+    "department": "Finance",
+    "monthly_income": 1900,
+    "is_primary_contact": true
+  },
+  {
+    "id": "emp_002",
+    "client_id": "client_001",
+    "first_name": "Tom",
+    "last_name": "Janssens",
+    "email": "tom.janssens@client-a.com",
+    "role": "Operations Lead",
+    "department": "Operations",
+    "monthly_income": 1650,
+    "is_primary_contact": false
+  },
+  {
+    "id": "emp_003",
+    "client_id": "client_002",
+    "first_name": "Nora",
+    "last_name": "Vermeulen",
+    "email": "nora.vermeulen@client-b.com",
+    "role": "CEO",
+    "department": "Management",
+    "monthly_income": 2450,
+    "is_primary_contact": true
+  },
+  {
+    "id": "emp_004",
+    "client_id": "client_003",
+    "first_name": "Pieter",
+    "last_name": "Maes",
+    "email": "pieter.maes@client-c.com",
+    "role": "Procurement Specialist",
+    "department": "Procurement",
+    "monthly_income": 5000,
+    "is_primary_contact": true
+  },
+    {
+    "id": "emp_005",
+    "client_id": "client_003",
+    "first_name": "Hannelore",
+    "last_name": "Maes",
+    "email": "hannelore.maes@client-c.com",
+    "role": "Procurement Specialist",
+    "department": "Procurement",
+    "monthly_income": 5000,
+    "is_primary_contact": true
+  }
+]
